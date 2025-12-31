@@ -1,2 +1,4 @@
 # 30 Days Coding Challenge
-Daily coding practice with VS Code and GitHub.
+Name:Vageesh Mishra
+Branch:Biotechnology
+Roll no.:25112071
