@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and form </title>
+</head>
+
+<body>
+    <hr>
+    <h1>Events </h1>
+    <hr>
+    <br>
+    <header>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Event </th>
+                    <th>Description</th>
+                    <th>date </th>
+                    <th>venue </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Music Concert </td>
+                    <td>A live performance and lots of fun. </td>
+                    <td>09-01-2026 </td>
+                    <td>NIT Raipur ground </td>
+                </tr>
+                <tr>
+                    <td>Annual Sports Fest </td>
+                    <td>A celebration of sports and athletic excellence. </td>
+                    <td>IDK </td>
+                    <td>NIT Raipur ground </td>
+                </tr>
+                <tr>
+                    <td>Tech Fest </td>
+                    <td>A gathering of tech enthusiasts and professionals. </td>
+                    <td>IDK </td>
+                    <td>NIT Raipur </td>
+                </tr>
+                <tr>
+                    <td>Something </td>
+                    <td>......................... </td>
+                    <td>IDK </td>
+                    <td>NIT Raipur </td>
+                </tr>
+            </tbody>
+
+        </table>
+        <br>
+    </header>
+    <hr>
+    <h3>Registration Form for the Events mentioned in the table</h3>
+    <main>
+        <form action="action.php" method="post">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="number">Phone :</label>
+            <input type="tel" id="number" name="number" required><br><br>
+
+            <select name="event" id="event" required>
+                <option value="">Select Event</option>
+                <option value="music_concert">Music Concert</option>
+                <option value="sports_fest">Annual Sports Fest</option>
+                <option value="tech_fest">Tech Fest</option>
+                <option value="something">Something</option>
+            </select><br><br>
+            <label>Ticket Type :</label>
+            <label for="1"><input type="radio" value="Front" name="ticket" id="1">Front Row</label>
+            <label for="2"><input type="radio" value="Middle" name="ticket" id="2">Middle Row</label>
+            <label for="3"><input type="radio" value="Back" name="ticket" id="3">Back Row</label><br><br>
+
+            <label for="Workshop">Choose Workshop:</label>
+            <label for="11"><input type="checkbox" name="workshop[]" id="11" value="Photography">Photography</label>
+            <label for="12"><input type="checkbox" name="workshop[]" id="12" value="Dance">Dance</label>
+            <label for="13"><input type="checkbox" name="workshop[]" id="13" value="Music">Music</label><br><br>
+
+            <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Any comments?"></textarea><br><br>
+    </main>
+    <footer>
+        <button type="submit">Submit</button>
+    </footer>
+    </form>
+
+
+</body>
+
+</html>
